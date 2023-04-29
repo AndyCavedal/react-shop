@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/BigMenu.scss';
+import '@styles/BigMenu.scss';
 
 const BigMenu = () => {
     return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/SendEmail.scss';
+import '@styles/SendEmail.scss';
 import yardSale from '@logos/logo_yard_sale.svg';
 
 const SendEmail = () => {

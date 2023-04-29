@@ -1,30 +1,29 @@
 import React from 'react';
-import '../styles/OrderItem.scss';
-import addedToCart from '@icons/bt_add_to_cart.svg'
+import '@styles/OrderItem.scss';
+import close from '@icons/icon_close.png'
 
 
-const OrderItem = () => {
+const OrderItem = ({ product }) => {
     // const [cart, setCart] = useState('');
     
     // const handleClick = () => {
     //     setCart('Hola Mundo')
     // }
     return (
-        <section className="main-container">
-            <div className="cards-container">
-                <div className="product-card">
-                    <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt />
+            <div className="OrderItem">
+                <figure>
+                    <img src={product.images[0]} alt={product.title} />
+                </figure>                    
                     <div className="product-info">
                         <div>
-                            <p>$120,00</p>
-                            <p>Bike</p>
+                            <p>{product.title}</p>
+                            <p>${product.price}</p>
                         </div>
                         <figure>
-                            <img src={addedToCart} alt />
+                            <img src={close} alt="" />
                         </figure>
                     </div>
-                </div>
-            </div></section>
+            </div>
     )
 }
 
