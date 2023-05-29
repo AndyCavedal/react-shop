@@ -9,7 +9,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         //nombre del enpaquetado que se va a crear
         filename: 'bundle.js',
-        publicPath: '/'
+        publicPath: './'
     },
     mode: 'development',
     //que extensiones se van a usar
